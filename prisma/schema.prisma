@@ -1,0 +1,20 @@
+datasource database {
+    provider = "mysql"
+    url      = env("DATABASE_URL")
+}
+
+generator db {
+    provider = "prisma-client-js"
+    output   = "./client"
+}
+
+generator erd {
+    provider = "prisma-markdown"
+    output   = "../ERD.md"
+    title    = "Nestia Bug Report"
+}
+
+model users {
+    id   String @id
+    name String
+}

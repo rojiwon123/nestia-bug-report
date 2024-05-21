@@ -1,0 +1,25 @@
+{
+    "name": "@project/api",
+    "version": "0.0.1",
+    "description": "Type-Safe SDK & Swagger를 제공하는 API Helper",
+    "main": "./lib/index.js",
+    "scripts": {
+        "start": "node swagger/index.cjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/intellectus-rojiwon/nestjs-serverless/packages/api"
+    },
+    "author": "industriously",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/intellectus-rojiwon/nestjs-serverless/issues"
+    },
+    "homepage": "https://github.com/intellectus-rojiwon/nestjs-serverless/packages/api#readme",
+    "dependencies": {
+        "@nestia/fetcher": "^2.5.12",
+        "express": "^4.18.2",
+        "swagger-ui-express": "^5.0.0",
+        "typia": "^5.4.13"
+    }
+}
